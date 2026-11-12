@@ -1,0 +1,3 @@
+for %p in (numpy pandas matplotlib seaborn scikit-learn scipy statsmodels plotly openpyxl jupyter notebook ipykernel pillow opencv-python nltk sympy requests flask reportlab python-docx web3) do @echo. & echo ===== Installing %p ===== & python -m pip install %p || echo SKIPPED: %p installation failed
+//TensorFlow installation
+python -m pip install tensorflow || echo TensorFlow skipped - incompatible Python version
